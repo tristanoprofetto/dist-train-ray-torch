@@ -1,0 +1,21 @@
+{
+    "train_cfg": {
+        "epochs": 1,
+        "batch_size": 8,
+        "learning_rate": 0.001,
+        "parallel_strategy": "ddp"
+    },
+    "scaling_cfg": {
+        "num_workers": 4,
+        "num_gpus": 1,
+        "num_nodes": 1,
+        "use_gpu": false
+    },
+    "run_cfg": {
+        "experiment_name": "test"
+    },
+    "torch_cfg": {
+        "timeout": 1800,
+        "backend": "nccl"
+    }
+}
